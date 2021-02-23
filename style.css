@@ -1,0 +1,70 @@
+body {
+  color: windowframe;
+  margin: auto;
+  width: 600px; /* épaisseur de la marge */
+  font-family: "Reenie Beanie", serif; /*police de cartère de "photo"*/
+}
+
+h1 {
+  margin: 50px 0px 0px 50px; /*marge de "photo" (position)*/
+}
+
+#Tab {
+  /*encadrement noir en haut */
+  position: relative;
+  padding: 10px 0 10px 5px;
+  background: #181a12;
+
+  border: solid #99cc66 1px;
+}
+
+body > #Tab {
+  width: 600px;
+}
+
+div#Tab a {
+  /*informations concernant les images sur fond noir */
+
+  width: 50px;
+  margin: 10px;
+  text-align: center; /*permet d'avoir l'image retour centrée*/
+  padding: 5px 10px; /*écarte de remplissage entre les trois images sans le soulignement blanc*/
+  margin: 0 0 1px; /*marge d'espace entre les trois images sans le soulignement blanc*/
+  text-decoration: none;
+  color: white; /*barre sous la photo quand le curseur est sur la photo*/
+}
+
+div#Tab a:hover {
+  /*hover : survoler */
+  /*permet de souligner l'image survolée par le curseur*/
+  color: #411;
+  background-color: windowframe;
+}
+
+div#Tab a span {
+  /*quand je ne survole pas une image du haut je n'affiche rien */
+  display: none;
+}
+
+div#Tab a:hover span {
+  /*affichage de l'image au moment où le curseur est sur une image du haut */
+  z-index: 1;
+  display: block;
+  position: fixed;
+  top: 162px;
+  margin: auto;
+
+  width: 600px;
+  height: 0px;
+  z-index: 10; /*permet de faire avancer ou reculer l'image dans le plan*/
+  background-color: white;
+}
+
+.small {
+  /*caractéristiques des images sur fond noir  */
+  border: 1px solid white; /*bordure blanche autour de l'image */
+  cursor: pointer; /*quand mon curseur est sur une image il devient une main*/
+  height: 50px;
+  margin: 0 0 5px 5px;
+  width: 50px;
+}
