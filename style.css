@@ -48,15 +48,15 @@ div#Tab a span {
 
 div#Tab a:hover span {
   /*affichage de l'image au moment où le curseur est sur une image du haut */
-  z-index: 1;
+
   display: block;
   position: fixed;
-  top: 162px;
+  top: 162px; /*modifications de la position de l'image affihcée*/
   margin: auto;
 
   width: 600px;
   height: 0px;
-  z-index: 10; /*permet de faire avancer ou reculer l'image dans le plan*/
+  z-index: 10;
   background-color: white;
 }
 
